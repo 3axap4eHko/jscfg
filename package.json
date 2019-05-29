@@ -1,6 +1,6 @@
 {
   "name": "jscfg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JavaScript configurator",
   "main": "build/index.js",
   "scripts": {
