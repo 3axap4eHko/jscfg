@@ -1,0 +1,37 @@
+{
+  "name": "jscfg",
+  "version": "0.1.0",
+  "description": "JavaScript configurator",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir build --ignore **/__tests__,**/__mocks__,**/__fixtures__",
+    "test": "NODE_ENV=test jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3axap4eHko/jscfg.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "config",
+    "configuration"
+  ],
+  "author": "Ivan Zakharchanka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3axap4eHko/jscfg/issues"
+  },
+  "homepage": "https://github.com/3axap4eHko/jscfg#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "ascertain": "^0.1.1",
+    "deepmerge": "^3.2.0"
+  }
+}
