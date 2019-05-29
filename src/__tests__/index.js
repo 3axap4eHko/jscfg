@@ -11,6 +11,12 @@ describe('JS Config test suite', () => {
     expect(config).toMatchObject(fixture);
   });
 
+  it('Should support swallow mode', () => {
+    const fixture = { d: [], e: {} };
+    set(fixture, true);
+    expect(config).toMatchObject(fixture);
+  });
+
   it('Should assert right schema without exceptions', () => {
     const schema = { a: Number, b: String, c: Boolean, d: Array, e: Object };
     expect(() => assert(schema)).not.toThrow();
