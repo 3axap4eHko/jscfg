@@ -11,6 +11,6 @@ export const set = (config, swallow = false) => {
   }
 };
 
-export const assert = schema => ascertain(schema, CONFIG);
+export const assert = schema => ascertain(schema)(CONFIG);
 
 export default CONFIG;
