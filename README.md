@@ -8,6 +8,8 @@
 
 ## Usage
 
+[Check ascertain doc for more examples](https://github.com/3axap4eHko/ascertain)
+
 Common config file
 ```js
 // config/common.js
