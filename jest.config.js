@@ -2,8 +2,11 @@ module.exports = {
   verbose: true,
   collectCoverage: !!process.env.TRAVIS || !!process.env.COVERAGE,
   collectCoverageFrom: [
-    'src/**/*.js',
+    'src/**/*.ts',
   ],
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+  },
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '__fixtures__',

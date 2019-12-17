@@ -12,7 +12,7 @@ describe('JS Config test suite', () => {
   });
 
   it('Should support swallow mode', () => {
-    const fixture = { d: [], e: {} };
+    const fixture: {d: any, e: any } = { d: [], e: {} };
     set(fixture, true);
     expect(config).toMatchObject(fixture);
   });
